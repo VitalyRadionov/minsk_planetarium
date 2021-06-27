@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Минский планетарий</title>
+</head>
+<body>
+  <div class="app">
+<!-- start navbar from 770px -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark event-show-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Минский планетарий</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Projects.html">Проекты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education.html">Образование</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- end navbar -->
+    <header class="header container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-2 col-md-2 header-logo-image">
+          <a href="index.html">
+            <img src="img/logo-png.png" alt="Minsk_planetarium">
+          </a>
+        </div>
+        <div class="col-lg-8 col-md-8">
+          <h1 class="header-title">Минский планетарий</h1>
+        </div>
+        <div class="col-lg-2 col-md-2 d-flex justify-content-end header-menu">
+          <div class="dropdown d-flex">
+          <button class="button-my" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">меню</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="about.html">О нас</a></li>
+            <li><a class="dropdown-item" href="Projects.html">Проекты</a></li>
+            <li><a class="dropdown-item" href="education.html">Образование</a></li>
+            <li><a class="dropdown-item" href="contacts.html">Контакты</a></li>
+          </ul>
+          </div>
+        </div>
+      </div> 
+    </header>
+    <!-- /header -->
+    <section class="hero container">
+      <p class="hero-description-short">бесконечный мир вселенной</p>
+      <p class="hero-description-long">Соверши незабываемое путешествие в дальние уголки космоса <br> Погрузись в мир неизвестных галактик и планет</p>
+    </section>
+    <!-- /hero -->
+    <div class="social">
+      <a href="" class="social-link">
+        <img src="img/facebook.svg" alt="fb">
+      </a>
+      <a href="" class="social-link">
+        <img src="img/instagram.svg" alt="ig">
+      </a>
+      <a href="" class="social-link">
+        <img src="img/twitter.svg" alt="tt">
+      </a>
+    </div>
+  </div>
+  <!-- /app -->
+  <section class="trip">
+    <div class="row">
+      <div class="col-lg-6">
+        <p class="trip-title">Выбери своё путешествие</p>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center">
+        <img src="img/x.svg" alt="x"  class="x-img">
+        <p class="trip-description">Наша команда организовала для вас несколько путешествий, откройте для себя что-то новое</p>
+      </div>
+    </div>
+    <!-- /row -->
+  
+  <ul class="nav justify-content-center" id="nav-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="poster-tab" data-bs-toggle="tab" data-bs-target="#poster" type="button" role="tab" aria-controls="poster" aria-selected="true">Афиша</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="spherical-cinema-tab" data-bs-toggle="tab" data-bs-target="#spherical-cinema" type="button" role="tab" aria-controls="spherical-cinema" aria-selected="false">Сферическое кино</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="classic-programm-tab" data-bs-toggle="tab" data-bs-target="#classic-programm" type="button" role="tab" aria-controls="classic-programm" aria-selected="false">Классические программы</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="podium-scientist-tab" data-bs-toggle="tab" data-bs-target="#podium-scientist" type="button" role="tab" aria-controls="podium-scientist" aria-selected="false">Трибуна учёного</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="fulldome-festival-tab" data-bs-toggle="tab" data-bs-target="#fulldome-festival" type="button" role="tab" aria-controls="fulldome-festival" aria-selected="false">FULLDOME FESTIVAL MINSK</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="observatory-tab" data-bs-toggle="tab" data-bs-target="#observatory" type="button" role="tab" aria-controls="observatory" aria-selected="false">Обсерватория</a>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="poster" role="tabpanel" aria-labelledby="poster-tab">
+<!-- start #poster from 770px -->
+      <div class="row d-flex ">
+        <div class="d-flex justify-content-center">
+				  <h6 class="section-title event-show">Календарь событий</h6>
+          <div class="section-date event-show">24 Июня</div>
+            <a href="" class="event-show"><div class="rect-1 d-flex align-items-center justify-content-center"><img src="img/arrow-down_1.png" alt="arrow-down_1.png"></div></a>
+            <a href="" class="event-show"><div class="rect-2 d-flex align-items-center justify-content-center"><img src="img/arrow-down_1.png" alt="arrow-down_1.png"></div></a>
+			    </div>
+		    </div>
+      <ul class="nav nav-pills mb-3 justify-content-center event-show" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-1" aria-selected="true">10:00 Как Месяц к Солнцу в гости ходил</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab" aria-controls="v-pills-2" aria-selected="false">12:00 Как Месяц к Солнцу в гости ходил</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab" aria-controls="v-pills-3" aria-selected="false">13:00 Как Месяц к Солнцу в гости ходил</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab" aria-controls="v-pills-4" aria-selected="false">14:00 Как Месяц к Солнцу в гости ходил</a>
+        </li>
+      </ul>
+      <div class="tab-content event-show" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+          <h3 class="v-pills-1-title">КАК МЕСЯЦ К СОЛНЦУ В ГОСТИ ХОДИЛ</h3> 
+            <p><strong> Жанр: Сферический фильм, Анимационный фильм <br>
+            Страна: Украина <br>
+            Продолжительность: 25 мин. + 15 мин. звездное небо <br>
+            Рекомендуемый возраст: от 6 лет</strong></p>
+            <p>Программа рассказывает о сказочном путешествии Месяца-молодца по созвездиям в поисках Солнца. Главного героя ожидают удивительные превращения и незабываемые приключения под живописным красочным небом. Сюжет фильма снят по мотивам албанской народной сказки. Отметим, что это первый сферический фильм самостоятельно снятый донецким планетарием. Зрители после просмотра шоу смогут ответить на такие вопросы: «Что такое лунные фазы?», «Почему Луна всегда обращена к нам одной и той же стороной?», «Что такое зодиак?». Интригующий тон повествования, безусловно, понравится юным зрителям.</p>
+        </div>
+        <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+          <h3 class="v-pills-1-title">КАК МЕСЯЦ К СОЛНЦУ В ГОСТИ ХОДИЛ</h3> 
+            <p><strong> Жанр: Сферический фильм, Анимационный фильм <br>
+            Страна: Украина <br>
+            Продолжительность: 25 мин. + 15 мин. звездное небо <br>
+            Рекомендуемый возраст: от 6 лет</strong></p>
+            <p>Программа рассказывает о сказочном путешествии Месяца-молодца по созвездиям в поисках Солнца. Главного героя ожидают удивительные превращения и незабываемые приключения под живописным красочным небом. Сюжет фильма снят по мотивам албанской народной сказки. Отметим, что это первый сферический фильм самостоятельно снятый донецким планетарием. Зрители после просмотра шоу смогут ответить на такие вопросы: «Что такое лунные фазы?», «Почему Луна всегда обращена к нам одной и той же стороной?», «Что такое зодиак?». Интригующий тон повествования, безусловно, понравится юным зрителям.</p>
+        </div>
+        <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+          <h3 class="v-pills-1-title">КАК МЕСЯЦ К СОЛНЦУ В ГОСТИ ХОДИЛ</h3> 
+            <p><strong> Жанр: Сферический фильм, Анимационный фильм <br>
+            Страна: Украина <br>
+            Продолжительность: 25 мин. + 15 мин. звездное небо <br>
+            Рекомендуемый возраст: от 6 лет</strong></p>
+            <p>Программа рассказывает о сказочном путешествии Месяца-молодца по созвездиям в поисках Солнца. Главного героя ожидают удивительные превращения и незабываемые приключения под живописным красочным небом. Сюжет фильма снят по мотивам албанской народной сказки. Отметим, что это первый сферический фильм самостоятельно снятый донецким планетарием. Зрители после просмотра шоу смогут ответить на такие вопросы: «Что такое лунные фазы?», «Почему Луна всегда обращена к нам одной и той же стороной?», «Что такое зодиак?». Интригующий тон повествования, безусловно, понравится юным зрителям.</p>
+        </div>
+          <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+          <h3 class="v-pills-1-title">КАК МЕСЯЦ К СОЛНЦУ В ГОСТИ ХОДИЛ</h3> 
+            <p><strong> Жанр: Сферический фильм, Анимационный фильм <br>
+            Страна: Украина <br>
+            Продолжительность: 25 мин. + 15 мин. звездное небо <br>
+            Рекомендуемый возраст: от 6 лет</strong></p>
+            <p>Программа рассказывает о сказочном путешествии Месяца-молодца по созвездиям в поисках Солнца. Главного героя ожидают удивительные превращения и незабываемые приключения под живописным красочным небом. Сюжет фильма снят по мотивам албанской народной сказки. Отметим, что это первый сферический фильм самостоятельно снятый донецким планетарием. Зрители после просмотра шоу смогут ответить на такие вопросы: «Что такое лунные фазы?», «Почему Луна всегда обращена к нам одной и той же стороной?», «Что такое зодиак?». Интригующий тон повествования, безусловно, понравится юным зрителям.</p>
+          </div>
+        </div>
+<!-- end #poster -->
+      <div class="d-flex align-items-start">
+        <div class="col-lg-4">
+          <div class="row align-items-end mb-4">
+			      <div class="col-9">
+				      <h6 class="section-title">Календарь событий</h6>
+              <div>24 Июня</div>
+			      </div>
+			      <div class="col-3 d-flex justify-content-end">
+              <a href=""><div class="rect-1 d-flex align-items-center justify-content-center"><img src="img/arrow-down_1.png" alt="arrow-down_1.png"></div></a>
+              <a href=""><div class="rect-2 d-flex align-items-center justify-content-center"><img src="img/arrow-down_1.png" alt="arrow-down_1.png"></div></a>
+			      </div>
+		      </div>
+          <!-- /row -->
+          <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+            <a class="nav-link active" id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-1" aria-selected="true">10:00 Как Месяц к Солнцу в гости ходил</a>
+            <a class="nav-link" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab" aria-controls="v-pills-2" aria-selected="false">12:00 Как Месяц к Солнцу в гости ходил</a>
+            <a class="nav-link" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab" aria-controls="v-pills-3" aria-selected="false">13:00 Как Месяц к Солнцу в гости ходил</a>
+            <a class="nav-link" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab" aria-controls="v-pills-4" aria-selected="false">14:00 Как Месяц к Солнцу в гости ходил</a>
+          </div>
+        </div>
+        <!-- /col-lg-4 -->
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+            <h3 class="v-pills-1-title">КАК МЕСЯЦ К СОЛНЦУ В ГОСТИ ХОДИЛ</h3> 
+                <p><strong> Жанр: Сферический фильм, Анимационный фильм <br>
+                Страна: Украина <br>
+                Продолжительность: 25 мин. + 15 мин. звездное небо <br>
+                Рекомендуемый возраст: от 6 лет</strong></p>
+                <p>Программа рассказывает о сказочном путешествии Месяца-молодца по созвездиям в поисках Солнца. Главного героя ожидают удивительные превращения и незабываемые приключения под живописным красочным небом. Сюжет фильма снят по мотивам албанской народной сказки. Отметим, что это первый сферический фильм самостоятельно снятый донецким планетарием. Зрители после просмотра шоу смогут ответить на такие вопросы: «Что такое лунные фазы?», «Почему Луна всегда обращена к нам одной и той же стороной?», «Что такое зодиак?». Интригующий тон повествования, безусловно, понравится юным зрителям.</p>
+          </div>
+          <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+            <h3 class="v-pills-1-title">КАК МЕСЯЦ К СОЛНЦУ В ГОСТИ ХОДИЛ</h3> 
+                <p><strong> Жанр: Сферический фильм, Анимационный фильм <br>
+                Страна: Украина <br>
+                Продолжительность: 25 мин. + 15 мин. звездное небо <br>
+                Рекомендуемый возраст: от 6 лет</strong></p>
+                <p>Программа рассказывает о сказочном путешествии Месяца-молодца по созвездиям в поисках Солнца. Главного героя ожидают удивительные превращения и незабываемые приключения под живописным красочным небом. Сюжет фильма снят по мотивам албанской народной сказки. Отметим, что это первый сферический фильм самостоятельно снятый донецким планетарием. Зрители после просмотра шоу смогут ответить на такие вопросы: «Что такое лунные фазы?», «Почему Луна всегда обращена к нам одной и той же стороной?», «Что такое зодиак?». Интригующий тон повествования, безусловно, понравится юным зрителям.</p>
+          </div>
+          <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+            <h3 class="v-pills-1-title">КАК МЕСЯЦ К СОЛНЦУ В ГОСТИ ХОДИЛ</h3> 
+                <p><strong> Жанр: Сферический фильм, Анимационный фильм <br>
+                Страна: Украина <br>
+                Продолжительность: 25 мин. + 15 мин. звездное небо <br>
+                Рекомендуемый возраст: от 6 лет</strong></p>
+                <p>Программа рассказывает о сказочном путешествии Месяца-молодца по созвездиям в поисках Солнца. Главного героя ожидают удивительные превращения и незабываемые приключения под живописным красочным небом. Сюжет фильма снят по мотивам албанской народной сказки. Отметим, что это первый сферический фильм самостоятельно снятый донецким планетарием. Зрители после просмотра шоу смогут ответить на такие вопросы: «Что такое лунные фазы?», «Почему Луна всегда обращена к нам одной и той же стороной?», «Что такое зодиак?». Интригующий тон повествования, безусловно, понравится юным зрителям.</p>
+          </div>
+          <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+            <h3 class="v-pills-1-title">КАК МЕСЯЦ К СОЛНЦУ В ГОСТИ ХОДИЛ</h3> 
+                <p><strong> Жанр: Сферический фильм, Анимационный фильм <br>
+                Страна: Украина <br>
+                Продолжительность: 25 мин. + 15 мин. звездное небо <br>
+                Рекомендуемый возраст: от 6 лет</strong></p>
+                <p>Программа рассказывает о сказочном путешествии Месяца-молодца по созвездиям в поисках Солнца. Главного героя ожидают удивительные превращения и незабываемые приключения под живописным красочным небом. Сюжет фильма снят по мотивам албанской народной сказки. Отметим, что это первый сферический фильм самостоятельно снятый донецким планетарием. Зрители после просмотра шоу смогут ответить на такие вопросы: «Что такое лунные фазы?», «Почему Луна всегда обращена к нам одной и той же стороной?», «Что такое зодиак?». Интригующий тон повествования, безусловно, понравится юным зрителям.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /d-flex -->
+    </div>
+    <!-- /#poster -->
+    <div class="tab-pane fade" id="spherical-cinema" role="tabpanel" aria-labelledby="spherical-cinema-tab">
+      <h3 class="spherical-cinema">ПОЛНОКУПОЛЬНОЕ (СФЕРИЧЕСКОЕ) КИНО</h3>
+      <P>Один из самых зрелищных форматов в киноискусстве! Изображение в сферическом фильме выводится на купол с обзором 360 градусов с помощью современных цифровых проекторов. При этом зритель имеет возможность видеть картинку вокруг себя и получает ощущение полного погружения в визуальное пространство и атмосферу фильма. Именно такой уникальный формат просмотра фильмов выгодно отличается от похода в обычный кинотеатр.</P>
+    </div>
+    <!-- /#spherical-cinema -->
+    <div class="tab-pane fade" id="classic-programm" role="tabpanel" aria-labelledby="classic-programm-tab">
+      <h3 class="classic-programm">КЛАССИЧЕСКИЕ ПРОГРАММЫ</h3> 
+      <p>Классический кинопоказ предполагает привычный двухмерный формат фильма, хорошо знакомый каждому зрителю. На наших звездных сеансах вас ждут самые сказочные и невероятные сюжеты и самые современные достижения астрономии и космонавтики.</p>
+    </div>
+    <!-- /#classic-programm -->
+    <div class="tab-pane fade" id="podium-scientist" role="tabpanel" aria-labelledby="podium-scientist">
+      <p>
+        <strong>«Трибуна учёного»</strong> — это цикл открытых научно-образовательных лекций на базе минского Планетария. Каждое мероприятие предполагает уникальное повествование о той или иной области естественнонаучных знаний.
+        Приглашенные лекторы – увлеченные люди, серьезные ученые, замечательные преподаватели вузов, уникальные специалисты, владеющие знаниями и опытом в области естественных наук. Эксперты занимательно и в понятной форме делятся своими знаниями, раскрывают профессиональные секреты, привлекают внимание широкой публики сведениями об открытиях и тенденциях в своей сфере деятельности и просто рассказывают о том, над чем увлеченно и вдохновенно работают
+      </p>
+      <p>
+        Наш проект рассчитан, прежде всего, на тех, кто интересуется астрономией, космонавтикой и наукой в целом, кто хочет быть в курсе последних научных достижений и нацелен на пополнение своего багажа знаний.
+      </p>
+      <p>
+        По субботам в 20.00 в звездном зале минского Планетария выдающиеся ученые дают ответы на самые актуальные вопросы современной науки. По окончании каждой лекции вы сможете насладиться красотой звездного неба Планетария.
+      </p>
+      <p>
+        <strong>
+        Адрес: г. Минск, ул. Фрунзе, 2 (парк им. Горького), звездный зал минского Планетария. <br>
+        Время проведения: по субботам в 20.00. <br>
+        Продолжительность: 60 – 90 мин. <br>
+        Рекомендуемый возраст: от 12 лет. <br>
+        </strong>
+      </p>
+        
+    </div>
+    <!-- /#podium-scientist -->
+    <div class="tab-pane fade" id="fulldome-festival" role="tabpanel" aria-labelledby="fulldome-festival-tab">
+      <h3 class="fulldome-festival">МИНСКИЙ МЕЖДУНАРОДНЫЙ ФЕСТИВАЛЬ ПОЛНОКУПОЛЬНЫХ ФИЛЬМОВ В БЕЛАРУСИ <br> MINSK INTERNATIONAL FULLDOME FESTIVAL (MIFF)</h3> 
+        <p><strong>14 - 17 октября 2021 года состоится III Минский международный фестиваль полнокупольных фильмов</strong> - уникальное событие для Беларуси, которое продемонстрирует современные достижения и технологии полнокупольного кино. Это один из самых молодых видов и перспективных направлений в киноиндустрии. Изображение в таком фильме выводится на купол с обзором 360 градусов с помощью современных цифровых проекторов. При этом зритель имеет возможность видеть картинку вокруг себя и получает ощущение полного погружения в визуальное пространство и атмосферу фильма. Именно такой уникальный формат кинопросмотра является одним из самых зрелищных, а сами полнокупольные фильмы открывают сегодня новые возможности по созданию интересных объектов интеллектуальной собственности, популяризации науки и развитии инновационного творчества в области культуры и искусства.</p> 
+    </div>
+    <!-- /#fulldome-festival -->
+    <div class="tab-pane fade" id="observatory" role="tabpanel" aria-labelledby="observatory-tab">
+      <p><strong>При Минском Планетарии есть своя Обсерватория</strong>, оборудованная телескопом-рефрактором фирмы Carl Zeiss 1950/130 миллиметров. При хорошей погоде c помощью этого оптического инструмента, под руководством компетентных специалистов, посетители могут наблюдать: Солнце, пятна на нем и другие явления солнечной активности, Луну с кратерами, горами, «морями», а также планеты Марс, Юпитер, Сатурн, двойные и кратные системы звёзд, звёздные скопления, примечательные туманности и близкие галактики.</p>
+    </div>
+    <!-- /#observatory -->
+  </div>
+  <!-- /#nav-tabContent -->
+  </section>
+  <!-- /trip -->
+
+  <section class="container  pt-5 pb-4">
+    <h1 class="title-news d-flex align-items-center justify-content-center">Новости</h1>
+		<div class="row mb-4">
+			<div class="col-xl-6">
+				<div class="card card-1 mb-4">
+					<h3 class="card-title">Художественная выставка Анатолия Белявского "Далёкое и близкое"</h3>
+					<p class="card-text">Выставка будет открыта до 18 июля</p>
+				</div>
+			</div>
+			<div class="col-xl-6">
+				<div class="card card-2 mb-4">
+					<h3 class="card-title">Художественная выставка Анатолия Белявского "Далёкое и близкое"</h3>
+					<p class="card-text">Выставка будет открыта до 18 июля</p>
+				</div>
+			</div>
+			<div class="col-xl-9 col-lg-6 mb-4">
+				<div class="card card-3">
+					<h3 class="card-title">Художественная выставка Анатолия Белявского "Далёкое и близкое"</h3>
+					<p class="card-text">Выставка будет открыта до 18 июля</p>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-6">
+				<div class="card card-4">
+					<h3 class="card-title">Художественная выставка Анатолия Белявского "Далёкое и близкое"</h3>
+					<p class="card-text">Выставка будет открыта до 18 июля</p>
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+	</section>
+	<!-- /container -->
+
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+        <h5>О НАС</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="">О планетарии</a></li>
+          <li class="mb-2"><a href="">Правила посещения</a></li>
+          <li class="mb-2"><a href="">Вопросы</a></li>
+          <li class="mb-2"><a href="">Полезные ресурсы</a></li>
+          <li class="mb-2"><a href="">Пртнёры</a></li>
+          <li class="mb-2"><a href="">Вакансии</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>ПРОЕКТЫ</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="">FULLDOME FESTIVAL</a></li>
+          <li class="mb-2"><a href="">Трибуна учёного</a></li>
+          <li class="mb-2"><a href="">Музыка и звёзды</a></li>
+          <li class="mb-2"><a href="">Галлилео</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>ОБРАЗОВАНИЕ</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="">Сказочная Вселенная</a></li>
+          <li class="mb-2"><a href="">Звёздные уроки</a></li>
+          <li class="mb-2"><a href="">Впечатляющая наука</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>КОНТАКТЫ</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">+375 17 294 33 64 (пн - выходной)</li>
+          <li class="mb-2">г. Минск, ул. Фрунзе, 2 (парк им. Горького)</li>
+        </ul>
+      </div>
+      <div class="col-8 col-lg-2 mb-3">
+        <h5>СЛЕДИТЕ ЗА НОВОСТЯМИ</h5>
+					<span class="d-inline-flex align-items-center">
+            <a href="#" class="social-link">
+              <img src="img/facebook.svg" alt="fb">
+            </a>
+            <a href="#" class="social-link">
+              <img src="img/twitter.svg" alt="tt">
+            </a>
+            <a href="#" class="social-link">
+              <img src="img/instagram.svg" alt="ig">
+            </a>
+          </span>
+      </div>
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/jquery.vide.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
